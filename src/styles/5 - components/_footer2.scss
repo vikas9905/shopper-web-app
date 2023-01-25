@@ -1,0 +1,127 @@
+@include set-default(
+	(
+		footer: (
+            font-family: $font-family,
+            font-size: 1.3rem,
+            letter-spacing: false,
+            background: #222,
+            color: false,
+            _link-active-color: #fff,
+
+            top: (
+                padding: 4rem 0,
+                border-top: false,
+                border-bottom: 1px solid #333,
+                background: false,
+            ),
+            middle: (
+                padding: 4.2rem 0 1.8rem,
+                letter-spacing: false,
+                border-bottom: 1px solid #333,
+                background: false,
+                widget: (
+                    margin-bottom: 3rem,
+                    title: (
+                        padding: .6rem 0,
+                        margin-bottom: .9rem,
+                        font-family: inherit,
+                        font-size: 1.6rem,
+                        font-weight: 600,
+                        letter-spacing: 0,
+                        line-height: false,
+                        text-transform: capitalize,
+                        color: #e1e1e1, 
+                    ),
+                    body: (
+                        padding: 8px 0 0,
+                        color: #999,
+                    ),
+                    list-item: (
+                        line-height: 1.2,
+                        margin-bottom: 15px,
+                    ),
+                    label: (
+                        font-family: false,
+                        font-size: false,
+                        font-weight: 500,  
+                        letter-spacing: false,
+                        line-height: false,
+                        text-transform: uppercase,
+                        color: #ccc,
+                    )
+                )
+            ),
+            main: (
+                padding: 2.6rem 0 0.4rem
+            ),
+            bottom: (
+                padding: 2.6rem 0 3rem,
+                background: false,
+            ),
+            copyright: (
+                font-family: false,
+                font-size: 1.4rem,
+                font-weight: 500,
+                color: false,
+                letter-spacing: -.01em,
+                line-height: 1.5,
+            ),
+            social-link: (
+                letter-spacing: .005em,
+                color: #999,
+                border: 2px solid #999,
+                hover: (
+                    color: #fff,
+                )
+            ),
+            about: (
+                logo: (
+                    margin-bottom: 1.6rem,
+                ),
+                p: (
+                    margin-bottom: 3rem,
+                    color: #999,
+                    line-height: 1.85,
+                    letter-spacing: -.025em
+                )
+            ),
+            newsletter: (
+                title: (
+                    padding: 0,
+                    margin-bottom: .5rem,
+                    font-family:  inherit,
+                    font-size: 2rem,
+                    font-weight: 600,
+                    letter-spacing: -.015em,
+                    text-transform: inherit,
+                    line-height: 1,
+                    color: #fff,
+                ),
+                desc: (
+                    margin-bottom: .1rem,
+                    font-family:  inherit,
+                    font-size: 1.4rem,
+                    font-weight: false,
+                    letter-spacing: -.005em,
+                    text-transform: false,
+                    line-height: 1.23,
+                    color: #999,
+                ),
+                form: (
+                    max-width: 48rem
+                ),
+                input: (
+                    padding: false,
+                    min-height: 100%,
+                    border: 0,
+                    border-radius: .3rem,
+                    color: $grey-color,
+                    background: #2c2c2c,
+                ),
+                btn: (
+                    padding: false
+                )
+            )
+        )
+    )
+);
