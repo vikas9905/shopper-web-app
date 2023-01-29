@@ -11,25 +11,25 @@ export default function CurrencySelection() {
     setCurrency(event.target.value);
   };
 
-  if (window.screen.width <= 700) {
-    return (
-      <FormControl sx={{ m: 1, minWidth: 50 }}>
-        <InputLabel >currency</InputLabel>
-        <Select
-          labelId="demo-simple-select-autowidth-label"
-          id="demo-simple-select-autowidth"
-          value={currency}
-          onChange={handleChange}
-          autoWidth
-          label="currency"
-        >
-          <MenuItem value='INR'>INR</MenuItem>
-          <MenuItem value='USD'>USD</MenuItem>
-          <MenuItem value='EUR'>EUR</MenuItem>
-        </Select>
-      </FormControl>
-    );
-  }
+  // if (window.screen.width <= 700) {
+  //   return (
+  //     <FormControl sx={{ m: 1, minWidth: 50 }}>
+  //       <InputLabel >currency</InputLabel>
+  //       <Select
+  //         labelId="demo-simple-select-autowidth-label"
+  //         id="demo-simple-select-autowidth"
+  //         value={currency}
+  //         onChange={handleChange}
+  //         autoWidth
+  //         label="currency"
+  //       >
+  //         <MenuItem value='INR'>INR</MenuItem>
+  //         <MenuItem value='USD'>USD</MenuItem>
+  //         <MenuItem value='EUR'>EUR</MenuItem>
+  //       </Select>
+  //     </FormControl>
+  //   );
+  // }
 
   return (
     <div>

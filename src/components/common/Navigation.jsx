@@ -17,7 +17,7 @@ import PrimarySearchAppBar from './Header';
 import MobileHeader from './MobileHeader';
 import Category from './Category';
 import CurrencySelection from './CurrencySelection'
-
+import {MainMenu} from '@/components/common';
 const Navigation = () => {
   const navbar = useRef(null);
   const { pathname } = useLocation();
@@ -60,7 +60,7 @@ const Navigation = () => {
 
   if (store.user && store.user.role === 'ADMIN') {
     return null;
-  } if (window.screen.width <= 700) {
+  } if (window.screen.width <= 768) {
     return (
       <MobileHeader
         // eslint-disable-next-line react/jsx-props-no-spreading
@@ -87,7 +87,6 @@ const Navigation = () => {
         <div className="searchBar">
           <SearchBar />
         </div>
-        
         <ul className="navigation-menu">
           <li className="navigation-menu-item">
             <BasketToggle>
@@ -100,7 +99,7 @@ const Navigation = () => {
                 >
 
                   <Badge count={store.basketLength}>
-                    <ShoppingOutlined style={{ fontSize: '2.4rem' }} />
+                    <ShoppingOutlined style={{ fontSize: '2.4rem' ,color:'#000'}} />
                   </Badge>
                 </button>
               )}
@@ -138,6 +137,7 @@ const Navigation = () => {
         </ul>
       </nav>
       <Category/>
+      <MainMenu/>
     </>
 
   );

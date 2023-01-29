@@ -1,7 +1,7 @@
 import PropType from 'prop-types';
 import React from 'react';
 import AppModal from 'react-modal';
-
+// import {Modal} from '@mui/material';
 const Modal = ({
   isOpen,
   onRequestClose,

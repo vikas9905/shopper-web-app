@@ -20,4 +20,8 @@ export { default as PrimarySearchAppBar } from './Header.jsx';
 export { default as Category } from './Category.jsx';
 export { default as MobileHeader } from './MobileHeader.jsx';
 export { default as  CurrencySelection} from './CurrencySelection.jsx';
+export { default as  MobileFooter} from './BottomNavigation.jsx';
+export { default as  MainMenu} from './MainMenu.jsx';
+export { default as  MobileMenu} from './MobileMenu.jsx';
+export { default as  Card} from './Card.jsx';
 

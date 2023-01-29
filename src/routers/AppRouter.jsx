@@ -102,7 +102,7 @@ const AppRouter = () => (
         />
         <PublicRoute component={view.PageNotFound} />
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
       <Footer2/>
     </>
   </Router>

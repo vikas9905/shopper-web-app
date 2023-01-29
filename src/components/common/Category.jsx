@@ -11,7 +11,7 @@ export default function Category (props) {
           <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.SHOP}>Shop</NavLink></li>
           <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.FEATURED_PRODUCTS}>Featured</NavLink></li>
           <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.RECOMMENDED_PRODUCTS}>Recommended</NavLink></li>
-          <li className="offerMenu"><LocalOfferOutlinedIcon/>Use Cupon: First50</li>
+          <li className="offerMenu" style={{'display':'inline-flex'}}><LocalOfferOutlinedIcon style={{marginTop:3}} />Use Cupon: First50</li>
         </ul>
     </div>
     </>
